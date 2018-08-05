@@ -4,7 +4,7 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-warning-alert',
   template: `
     <button mdbBtn type="button" color="blue-grey" class="waves-light" mdbPopover="This is a warning!!!"
-            placement="bottom"
+            placement="bottom" triggers="focus"
             mdbPopoverHeader="Alert!!" mdbWavesEffect>The Warning Component!!</button>
   `,
   styles: [`
