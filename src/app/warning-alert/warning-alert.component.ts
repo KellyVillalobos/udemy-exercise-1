@@ -3,10 +3,16 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-warning-alert',
   template: `
-    <app-success-alert></app-success-alert>
-    <app-success-alert></app-success-alert>
+    <button mdbBtn type="button" color="blue-grey" class="waves-light" mdbPopover="This is a warning!!!"
+            placement="bottom"
+            mdbPopoverHeader="Alert!!" mdbWavesEffect>The Warning Component!!</button>
   `,
-  styleUrls: ['./warning-alert.component.scss']
+  styles: [`
+    :host >>> .popover-body {
+      color: red;
+      background-color: mistyrose;
+    }
+  `]
 })
 export class WarningAlertComponent implements OnInit {
 
